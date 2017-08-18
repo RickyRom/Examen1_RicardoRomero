@@ -285,6 +285,15 @@ public class RicardoRomero_Examen1 extends javax.swing.JFrame {
             fecha = dc_fecha.getDate();
             
             
+            tf_usuario.setText("");
+            tf_contraseña.setText("");
+            tf_nombre.setText("");
+            tf_correo.setText("");
+            tf_genero.setText("");
+            tf_numero.setText("");
+            dc_fecha.setDate(new Date());
+            
+            JOptionPane.showMessageDialog(this, "Usuario creado exitosamente");
             
         } catch (Exception e) {
             e.printStackTrace();
